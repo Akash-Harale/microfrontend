@@ -14,7 +14,11 @@ module.exports = {
         "./CartShow": "./src/index",
       },
       // if we are writing shared here then it will create its own instance of that library
-      shared: ["faker"],
+      shared: {
+        faker: {
+          singleton: true,
+        },
+      },
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
