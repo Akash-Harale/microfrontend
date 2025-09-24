@@ -1,6 +1,6 @@
 import faker from "faker";
 
-const cartitems = faker.random.numeric(1);
+const cartitems = faker.datatype.number(20);
 
 document.querySelector(
   "#div-cart"
